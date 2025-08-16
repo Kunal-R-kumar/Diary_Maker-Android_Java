@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Diary Maker</string>
+    <string name="diary_editText">Write your diary here…</string>
+    <string name="delete_button_description">"Delete Button"</string>
+    <string name="up_button_description">"Up Button"</string>
+    <string name="down_button_description">"Down Button"</string>
+    <string name="whatsapp_button_description">"Whatsapp Button"</string>
+    <string name="copy_button_description">"Copy Button"</string>
+</resources>

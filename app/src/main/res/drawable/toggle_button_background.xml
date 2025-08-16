@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Active (checked) -->
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+            <stroke android:width="1dp" android:color="@android:color/black"/>
+        </shape>
+    </item>
+
+    <!-- Inactive (default) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/light_purple" />
+            <stroke android:width="1dp" android:color="@android:color/black"/>
+        </shape>
+    </item>
+</selector>

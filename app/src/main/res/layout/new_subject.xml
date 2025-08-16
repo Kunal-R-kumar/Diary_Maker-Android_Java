@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:id="@+id/emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:id="@+id/subject_name"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ToggleButton
+            android:id="@+id/btn_b"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/toggle_button_background"
+            android:padding="10dp"
+            android:textColor="@color/toggle_button_text_color"
+            android:textOff="B"
+            android:textOn="B"
+            android:checked="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/btn_i"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/toggle_button_background"
+            android:padding="10dp"
+            android:textColor="@color/toggle_button_text_color"
+            android:textOff="I"
+            android:textOn="I"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_diary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Write here…"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textIsSelectable="true"
+            android:longClickable="true"
+            android:padding="8dp"
+            android:minHeight="48dp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ripple_icon_button"
+            android:contentDescription="@string/delete_button_description"
+            android:padding="10dp"
+            android:src="@drawable/delete_button"
+            app:tint="@color/ripple_icon_button_tint" />
+
+        <ImageButton
+            android:id="@+id/btn_up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ripple_icon_button"
+            android:contentDescription="@string/up_button_description"
+            android:padding="10dp"
+            android:src="@drawable/up_button"
+            app:tint="@color/ripple_icon_button_tint" />
+
+        <ImageButton
+            android:id="@+id/btn_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/ripple_icon_button"
+            android:contentDescription="@string/down_button_description"
+            android:padding="10dp"
+            android:src="@drawable/down_button"
+            app:tint="@color/ripple_icon_button_tint" />
+    </LinearLayout>
+
+</LinearLayout>
